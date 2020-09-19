@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/_130sdp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+<androidx.cardview.widget.CardView
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/_100sdp"
+    app:cardCornerRadius="@dimen/_10sdp"
+    android:layout_margin="@dimen/_20sdp"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_50sdp"
+            android:layout_alignParentRight="true"
+            android:textSize="@dimen/_20sdp"
+            android:text="الرقية الشرعية"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:textColor="#024b30"
+            android:id="@+id/dialog_roqia_tv"
+            android:fontFamily="@font/araby"/>
+        <TextView
+            android:layout_marginLeft="@dimen/_10sdp"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_50sdp"
+            android:layout_alignParentLeft="true"
+            android:textSize="@dimen/_20sdp"
+            android:text="ايات الحرق"
+            android:textColor="#024b30"
+            android:id="@+id/dialog_harq_tv"
+            android:fontFamily="@font/araby"/>
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>
+</RelativeLayout>

@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/whiteback"
+    >
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+            <androidx.appcompat.widget.Toolbar
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_50sdp"
+                android:background="@color/darkblue"
+                >
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    >
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/kofy3"
+                        android:layout_centerHorizontal="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_margin="10dp"
+                        android:text="sskjlksalk"
+                        android:textColor="@color/whiteback"
+                        android:textSize="25sp"
+                        android:id="@+id/player_tv_surah_name"/>
+                    <ImageView
+                        android:layout_alignParentStart="true"
+                        android:layout_width="@dimen/_30sdp"
+                        android:layout_height="@dimen/_30sdp"
+                        android:src="@drawable/ic_baseline_share_24"
+                        android:layout_centerVertical="true"
+                        android:id="@+id/btn_share"/>
+                    <ImageView
+                        android:layout_toEndOf="@id/btn_share"
+                        android:layout_marginEnd="@dimen/_10sdp"
+                        android:layout_marginStart="@dimen/_10sdp"
+                        android:layout_width="@dimen/_30sdp"
+                        android:layout_height="@dimen/_30sdp"
+                        android:src="@drawable/ic_baseline_star_24"
+                        android:layout_centerVertical="true"
+
+                        android:id="@+id/btn_rate"/>
+
+
+                </RelativeLayout>
+            </androidx.appcompat.widget.Toolbar>
+
+
+
+            <RelativeLayout
+                android:layout_marginTop="70dp"
+
+                android:background="@color/whiteback"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/rel1"
+
+                >
+                <ImageView
+                    android:background="@drawable/quran"
+                    android:layout_width="300dp"
+                    android:layout_height="300dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="50dp"
+                    android:id="@+id/playr_ivpreview"
+                    />
+
+            </RelativeLayout>
+            <SeekBar
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/rel1"
+                android:layout_marginTop="20sp"
+
+                android:progressDrawable="@drawable/seekbar_progress"
+                android:thumb="@drawable/seek_handler"
+                android:id="@+id/player_sbprogress"/>
+            <ImageView
+                android:layout_centerHorizontal="true"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_below="@id/player_sbprogress"
+
+                android:layout_marginTop="20dp"
+                android:src="@drawable/img_btn_play_pressed"
+                android:id="@+id/player_btnplay"/>
+
+<!--            <ImageView-->
+<!--                android:layout_alignParentLeft="true"-->
+<!--                android:layout_width="50dp"-->
+<!--                android:layout_height="50dp"-->
+
+<!--                android:layout_below="@id/player_btstop"-->
+
+<!--                android:layout_marginTop="20dp"-->
+<!--                android:src="@drawable/ic_share_black_24dp"-->
+<!--                android:id="@+id/player_btshare"/>-->
+
+<!--            <LinearLayout-->
+<!--                android:background="#0086ad"-->
+<!--                android:layout_marginTop="10dp"-->
+<!--                android:layout_below="@id/player_btshare"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="50dp"-->
+<!--                android:orientation="horizontal">-->
+
+<!--                <de.hdodenhof.circleimageview.CircleImageView-->
+<!--                    android:id="@+id/facebook"-->
+<!--                    android:layout_width="50dp"-->
+<!--                    android:layout_height="50dp"-->
+<!--                    android:layout_weight="1"-->
+<!--                    android:src="@drawable/facebook" />-->
+
+<!--                <de.hdodenhof.circleimageview.CircleImageView-->
+<!--                    android:id="@+id/whatsup"-->
+<!--                    android:layout_width="50dp"-->
+<!--                    android:layout_height="50dp"-->
+<!--                    android:layout_weight="1"-->
+<!--                    android:src="@drawable/whatsup" />-->
+<!--                <de.hdodenhof.circleimageview.CircleImageView-->
+<!--                    android:id="@+id/twitter"-->
+<!--                    android:layout_width="50dp"-->
+<!--                    android:layout_height="50dp"-->
+<!--                    android:layout_weight="1"-->
+<!--                    android:src="@drawable/twitter" />-->
+<!--                <de.hdodenhof.circleimageview.CircleImageView-->
+<!--                    android:id="@+id/instagram"-->
+<!--                    android:layout_width="50dp"-->
+<!--                    android:layout_height="50dp"-->
+<!--                    android:layout_weight="1"-->
+<!--                    android:src="@drawable/insta" />-->
+<!--                <de.hdodenhof.circleimageview.CircleImageView-->
+<!--                    android:id="@+id/pinteret"-->
+<!--                    android:layout_width="50dp"-->
+<!--                    android:layout_height="50dp"-->
+<!--                    android:layout_weight="1"-->
+<!--                    android:src="@drawable/pint" />-->
+
+<!--            </LinearLayout>-->
+
+        </RelativeLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

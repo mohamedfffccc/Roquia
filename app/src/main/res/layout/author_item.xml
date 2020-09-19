@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+<androidx.cardview.widget.CardView
+    android:layout_width="@dimen/_150sdp"
+    android:layout_height="@dimen/_150sdp"
+    android:elevation="@dimen/_10sdp"
+    app:cardCornerRadius="@dimen/_10sdp"
+    android:layout_margin="@dimen/_5sdp"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_120sdp"
+            android:src="@drawable/ic_logo_size"
+            android:id="@+id/author_item_iv_image"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_below="@id/author_item_iv_image"
+            android:id="@+id/author_item_tv_name"
+            android:textColor="#000"
+            android:layout_margin="@dimen/_5sdp"
+            android:text="عبد الباسط عبد الصمد"
+            android:textSize="@dimen/_15sdp"
+            android:fontFamily="@font/kofy2"/>
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>
+</RelativeLayout>
