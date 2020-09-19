@@ -98,11 +98,7 @@ public class PlayerFragment extends BaseFragment {
         return root;
     }
 
-    @OnClick(R.id.player_btnplay)
-    public void onViewClicked() {
-        playerBtnplay.setBackgroundResource(R.drawable.img_btn_pause_pressed);
 
-    }
 
     @OnClick({R.id.btn_share, R.id.btn_rate, R.id.player_btnplay})
     public void onViewClicked(View view) {
